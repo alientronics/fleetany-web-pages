@@ -7,6 +7,10 @@ php:
   - 5.6
   - 7.0
 
+addons:
+    code_climate:
+        repo_token: e33d8fcfffaa6a5171a0c059fabf1a1b29c29a0a26e0eb8424c95a7187ddf038
+
 before_install:
   - composer self-update
 
