@@ -1,0 +1,21 @@
+{
+  "name": "alientronics/fleetany-web-pages",
+  "description": "Static pages package for Fleetany Web",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alientronics"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "5.2.*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Alientronics\\FleetanyWebPages\\": "src/Alientronics/FleetanyWebPages"
+    }
+  },
+  "minimum-stability": "dev"
+}
