@@ -13,3 +13,6 @@
 
 Route::resource('/tos', 'Alientronics\FleetanyWebPages\Controllers\PageController@tos');
 Route::resource('/privacy', 'Alientronics\FleetanyWebPages\Controllers\PageController@privacy');
+Route::resource('/home', 'Alientronics\FleetanyWebPages\Controllers\PageController@home');
+Route::resource('/about', 'Alientronics\FleetanyWebPages\Controllers\PageController@about');
+Route::resource('/pricing', 'Alientronics\FleetanyWebPages\Controllers\PageController@pricing');

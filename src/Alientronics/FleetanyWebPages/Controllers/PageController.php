@@ -17,7 +17,7 @@ class PageController extends Controller
      */
     public function tos()
     {
-        return view('fleetany-web-pages::tos');
+        return view('fleetany-web-pages::termsofservice');
     }
 
     /**
@@ -26,5 +26,29 @@ class PageController extends Controller
     public function privacy()
     {
         return view('fleetany-web-pages::privacy');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function home()
+    {
+        return view('fleetany-web-pages::home');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function about()
+    {
+        return view('fleetany-web-pages::about');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function pricing()
+    {
+        return view('fleetany-web-pages::pricing');
     }
 }
