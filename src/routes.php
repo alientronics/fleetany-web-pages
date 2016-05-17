@@ -16,3 +16,5 @@ Route::resource('/privacy', 'Alientronics\FleetanyWebPages\Controllers\PageContr
 Route::resource('/home', 'Alientronics\FleetanyWebPages\Controllers\PageController@home');
 Route::resource('/about', 'Alientronics\FleetanyWebPages\Controllers\PageController@about');
 Route::resource('/pricing', 'Alientronics\FleetanyWebPages\Controllers\PageController@pricing');
+
+Route::get('/web-pages/lang/{lang?}', 'Alientronics\FleetanyWebPages\Controllers\PageController@setLang');
