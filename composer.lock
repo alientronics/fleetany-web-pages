@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4a3347184651ba666991d48a34e2e33e",
+    "hash": "ffd09c8e89216c6fb7df98315dbbcef8",
     "content-hash": "e19dc4e50789af0f79056d4fe0fff877",
     "packages": [
         {
@@ -230,8 +230,7 @@
                 "url": "https://github.com/alientronics/fleetany-web.git",
                 "reference": "master"
             },
-            "type": "library",
-            "time": "2016-05-17 21:42:54"
+            "type": "library"
         },
         {
             "name": "codeclimate/php-test-reporter",
