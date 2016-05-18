@@ -8,7 +8,8 @@ use Illuminate\Support\ServiceProvider;
  * Class FleetanyWebPagesServiceProvider
  * @package Alientronics\FleetanyWebPages
  */
-class FleetanyWebPagesServiceProvider extends ServiceProvider {
+class FleetanyWebPagesServiceProvider extends ServiceProvider
+{
 
     /**
      * @return void

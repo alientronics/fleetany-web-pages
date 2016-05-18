@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Entities\User;
 use Illuminate\Http\Request;
 
-
 /**
  * Class PageController
  * @package Alientronics\FleetanyWebPages\Controllers
@@ -68,7 +67,7 @@ class PageController extends Controller
     {
         $user = new User();
         $availableLanguages = $user->getAvailableLanguages();
-        if(!array_key_exists($lang, $availableLanguages)) {
+        if (!array_key_exists($lang, $availableLanguages)) {
             $lang = 'en';
         }
 

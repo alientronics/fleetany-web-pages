@@ -42,5 +42,4 @@ class AcceptanceTestCase extends BaseTestCase
 
         return $app;
     }
-    
 }
