@@ -22,7 +22,9 @@ class AcceptanceTestCase extends BaseTestCase
 
     public function createApplication()
     {
-        $app = require __DIR__.'/../vendor/alientronics/fleetany-web/bootstrap/app.php';
+        $app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
+
+        $app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
         return $app;
     }

@@ -9,26 +9,31 @@ class PagesTest extends AcceptanceTestCase
 
     public function testAbout()
     {
-        $this->visit('/about')->see('About')->click('Portuguese')->seePageIs('/about');
+        $this->get('/about');
+        $this->assertEquals($this->response->status(), 200);
     }
-    
+
     public function testHome()
     {
-        $this->visit('/home')->see('Home')->click('Portuguese')->seePageIs('/home');
+        $this->get('/home');
+        $this->assertEquals($this->response->status(), 200);
     }
     
     public function testPricing()
     {
-        $this->visit('/pricing')->see('Pricing')->click('Portuguese')->seePageIs('/pricing');
+        $this->get('/pricing');
+        $this->assertEquals($this->response->status(), 200);
     }
     
     public function testPrivacy()
     {
-        $this->visit('/privacy')->see('Privacy')->click('Portuguese')->seePageIs('/privacy');
+        $this->get('/privacy');
+        $this->assertEquals($this->response->status(), 200);
     }
     
     public function testTos()
     {
-        $this->visit('/tos')->see('Terms of Service')->click('Portuguese')->seePageIs('/tos');
+        $this->get('/tos');
+        $this->assertEquals($this->response->status(), 200);
     }
 }
