@@ -2,7 +2,7 @@
 
 @section('contentpage')
     
-	<h2>{!!Lang::get('webpages.TermsOfService')!!}</h2>
+	<h2>{!!Lang::get('fleetany-web-pages::webpages.TermsOfService')!!}</h2>
 	<p>Thank you for taking the time to read our terms of service.
 	We've tried to keep it simple, but you must agree to these terms in order to use Alientronics.</p>
 

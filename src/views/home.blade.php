@@ -2,7 +2,7 @@
 
 @section('contentpage')
 
-	<h2>{!!Lang::get('webpages.Home')!!}</h2>
+	<h2>{!!Lang::get('fleetany-web-pages::webpages.Home')!!}</h2>
 
 	<h4>Home</h4>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend justo vel ante iaculis ornare. Aenean nec mauris ut eros sagittis cursus. Phasellus consectetur aliquet odio, at lacinia ligula venenatis id. Suspendisse nisi felis, efficitur eget semper sit amet, venenatis et dolor. Integer a maximus diam, vel volutpat eros. Sed libero libero, malesuada ut fringilla ut, placerat nec nunc. Integer sagittis mi eget tristique pharetra. Nulla facilisi. Nam malesuada libero vitae elit auctor consectetur. Mauris eu purus rutrum, venenatis odio vitae, laoreet lectus. Nunc dictum urna sit amet ligula placerat consequat. Ut odio nulla, malesuada pharetra quam ut, fringilla ultrices massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dui eu orci accumsan, id ultrices lectus sagittis. Nunc tempus, ex iaculis volutpat cursus, nisl nisl porta sem, tempus luctus dolor nibh in lacus. Duis laoreet, sem in fermentum efficitur, ex magna elementum ligula, sed aliquam justo felis quis lectus.</p>

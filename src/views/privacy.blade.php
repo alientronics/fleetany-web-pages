@@ -2,7 +2,7 @@
 
 @section('contentpage')
 
-	<h2>{!!Lang::get('webpages.PrivacyPolicy')!!}</h2>
+	<h2>{!!Lang::get('fleetany-web-pages::webpages.PrivacyPolicy')!!}</h2>
 
 	<h4>Information gathering</h4>
 	<p>When you register for Alientronics we collect information such as your name and email address. Alientronics uses this information to be able to provide our service, for identification and authorization of users, and to be able to contact you.</p>

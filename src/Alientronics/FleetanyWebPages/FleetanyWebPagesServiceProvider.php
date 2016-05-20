@@ -21,6 +21,9 @@ class FleetanyWebPagesServiceProvider extends ServiceProvider
 
         // Routes
         include __DIR__.'/../../routes.php';
+        
+        // Translations
+        $this->loadTranslationsFrom(__DIR__ . '/../../translations', 'fleetany-web-pages');
     }
 
     /**
