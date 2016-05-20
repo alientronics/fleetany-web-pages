@@ -18,3 +18,5 @@ ratings:
    paths:
    - src/**
    - "**.php"
+exclude_paths:
+- "src/views/*"
