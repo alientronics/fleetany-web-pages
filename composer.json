@@ -7,20 +7,6 @@
       "name": "Alientronics"
     }
   ],
-  "repositories": [
-    {
-        "type": "package",
-        "package": {
-            "version": "dev-master",
-            "name": "alientronics/fleetany-web",
-            "source": {
-                "url": "https://github.com/alientronics/fleetany-web.git",
-                "type": "git",
-                "reference": "master"
-            }
-        }
-    }
-  ],
   "require": {
     "php": ">=5.4.0",
     "illuminate/support": "^5.2"
