@@ -36,4 +36,10 @@ class PagesTest extends AcceptanceTestCase
         $this->get('/tos');
         $this->assertEquals($this->response->status(), 200);
     }
+
+    public function testLang()
+    {
+        $this->get('/web-pages/lang/en');
+        $this->assertEquals($this->response->status(), 302);
+    }
 }

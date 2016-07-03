@@ -3,8 +3,9 @@
 namespace Alientronics\FleetanyWebPages\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Entities\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Lang;
 
 /**
  * Class PageController
@@ -65,12 +66,25 @@ class PageController extends Controller
 
     public function setLang($lang)
     {
-        $user = new User();
-        $availableLanguages = $user->getAvailableLanguages();
+        $availableLanguages = $this->getAvailableLanguages();
         if (!array_key_exists($lang, $availableLanguages)) {
             $lang = 'en';
         }
 
         return redirect()->back()->withCookie(cookie('webPagesLang', $lang, 60));
+    }
+
+    private function getAvailableLanguages()
+    {
+        $languages = [];
+        $directories = File::directories(base_path() . DIRECTORY_SEPARATOR .
+                            'resources' . DIRECTORY_SEPARATOR . 'lang');
+        
+        foreach ($directories as $directory) {
+            $lang = explode(DIRECTORY_SEPARATOR, $directory);
+            $lang = end($lang);
+            $languages[$lang] = Lang::get('general.' . $lang);
+        }
+        return $languages;
     }
 }
