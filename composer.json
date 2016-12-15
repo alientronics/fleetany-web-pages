@@ -18,7 +18,7 @@
     "squizlabs/php_codesniffer": "^2.3",
     "phploc/phploc": "*",
     "sebastian/phpcpd": "*",
-    "phpmd/phpmd": "*",
+    "phpmd/phpmd": "*", 
     "codeclimate/php-test-reporter": "dev-master"
   },
   "autoload": {
